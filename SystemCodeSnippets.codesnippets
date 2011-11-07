@@ -83,7 +83,7 @@
         <string>- (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
-    if(self)
+    if (self)
     {
         &lt;#initializations#&gt;
     }
@@ -137,7 +137,7 @@
         <string>- (id)init
 {
     self = [super init];
-    if(self)
+    if (self)
     {
         &lt;#initializations#&gt;
     }
@@ -266,7 +266,7 @@
         <string>- (id)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
-    if(self)
+    if (self)
     {
         &lt;#initializations#&gt;
     }
@@ -384,7 +384,7 @@ dispatch_once(&amp;onceToken, ^{
     static NSString *cellIdentifier = @"&lt;#MyCell#&gt;";
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if(cell == nil)
+    if (cell == nil)
     {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
     }
@@ -463,7 +463,7 @@ dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
     	<key>IDECodeSnippetContents</key>
     	<string>- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    if(context == &lt;#context#&gt;)
+    if (context == &lt;#context#&gt;)
     {
         &lt;#code to be executed upon observing keypath#&gt;
     } 
@@ -502,7 +502,7 @@ NSPredicate *predicate = [NSPredicate predicateWithFormat:@"&lt;#Predicate strin
 
 NSError *error = nil;
 NSArray *fetchedObjects = [&lt;#context#&gt; executeFetchRequest:fetchRequest error:&amp;error];
-if(fetchedObjects == nil)
+if (fetchedObjects == nil)
 {
     &lt;#Error handling code#&gt;
 }
@@ -533,7 +533,7 @@ NSEntityDescription *entity = [NSEntityDescription entityForName:@"&lt;#Entity n
 
 NSError *error = nil;
 NSArray *fetchedObjects = [&lt;#context#&gt; executeFetchRequest:fetchRequest error:&amp;error];
-if(fetchedObjects == nil)
+if (fetchedObjects == nil)
 {
     &lt;#Error handling code#&gt;
 }
@@ -743,7 +743,7 @@ NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil]
 
 NSError *error = nil;
 NSArray *fetchedObjects = [&lt;#context#&gt; executeFetchRequest:fetchRequest error:&amp;error];
-if(fetchedObjects == nil)
+if (fetchedObjects == nil)
 {
     // Handle the error
 }
@@ -900,7 +900,7 @@ while(index != NSNotFound)
         <key>IDECodeSnippetCompletionPrefix</key>
         <string>if</string>
         <key>IDECodeSnippetContents</key>
-        <string>if(&lt;#condition#&gt;)
+        <string>if (&lt;#condition#&gt;)
 {
   &lt;#statements#&gt;
 }</string>
@@ -924,7 +924,7 @@ while(index != NSNotFound)
         <key>IDECodeSnippetCompletionPrefix</key>
         <string>ifelse</string>
         <key>IDECodeSnippetContents</key>
-        <string>if(&lt;#condition#&gt;)
+        <string>if (&lt;#condition#&gt;)
 {
   &lt;#statements-if-true#&gt;
 }
